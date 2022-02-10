@@ -1,9 +1,0 @@
-{
-  "version": "1.0.0",
-  "name": "asp.net",
-  "private": true,
-  "dependencies": {
-    "@angular/cli": "^13.2.2",
-    "@angular/core": "^13.2.2"
-  }
-}
