@@ -1,0 +1,12 @@
+C:\Users\henry\source\repos\LostAndFoundBoard\LostAndFoundLibrary.Domain\bin\Debug\net5.0\LostAndFoundLibrary.Domain.deps.json
+C:\Users\henry\source\repos\LostAndFoundBoard\LostAndFoundLibrary.Domain\bin\Debug\net5.0\LostAndFoundLibrary.Domain.dll
+C:\Users\henry\source\repos\LostAndFoundBoard\LostAndFoundLibrary.Domain\bin\Debug\net5.0\ref\LostAndFoundLibrary.Domain.dll
+C:\Users\henry\source\repos\LostAndFoundBoard\LostAndFoundLibrary.Domain\bin\Debug\net5.0\LostAndFoundLibrary.Domain.pdb
+C:\Users\henry\source\repos\LostAndFoundBoard\LostAndFoundLibrary.Domain\obj\Debug\net5.0\LostAndFoundLibrary.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\henry\source\repos\LostAndFoundBoard\LostAndFoundLibrary.Domain\obj\Debug\net5.0\LostAndFoundLibrary.Domain.AssemblyInfoInputs.cache
+C:\Users\henry\source\repos\LostAndFoundBoard\LostAndFoundLibrary.Domain\obj\Debug\net5.0\LostAndFoundLibrary.Domain.AssemblyInfo.cs
+C:\Users\henry\source\repos\LostAndFoundBoard\LostAndFoundLibrary.Domain\obj\Debug\net5.0\LostAndFoundLibrary.Domain.csproj.CoreCompileInputs.cache
+C:\Users\henry\source\repos\LostAndFoundBoard\LostAndFoundLibrary.Domain\obj\Debug\net5.0\LostAndFoundLibrary.Domain.dll
+C:\Users\henry\source\repos\LostAndFoundBoard\LostAndFoundLibrary.Domain\obj\Debug\net5.0\ref\LostAndFoundLibrary.Domain.dll
+C:\Users\henry\source\repos\LostAndFoundBoard\LostAndFoundLibrary.Domain\obj\Debug\net5.0\LostAndFoundLibrary.Domain.pdb
+C:\Users\henry\source\repos\LostAndFoundBoard\LostAndFoundLibrary.Domain\obj\Debug\net5.0\LostAndFoundLibrary.Domain.csprojAssemblyReference.cache

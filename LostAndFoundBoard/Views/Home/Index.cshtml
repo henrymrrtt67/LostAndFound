@@ -1,0 +1,46 @@
+﻿@model LostAndFoundBoard.Application.ViewModel.IndexListingViewModel;
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="~/css/button.css" />
+        <link rel="stylesheet" type="text/css" href="~/css/Index.css" />
+    </head>
+<body>
+<div class="text-center">
+    <table>
+        <tr>
+            <td>
+                Title
+            </td>
+            <td>
+                Description
+            </td>
+            <td>
+                Category
+            </td>
+        </tr>
+        <tbody>
+            @foreach (var item in Model.IndexModels)
+            {
+                if (!item.IsFound)
+                {
+                    <tr class="row" onclick="location.href='@Url.ActionLink("Detail", "Item", new { Id = item.Id })'">
+                        <td>
+                            @item.Title
+                        </td>
+                        <td>
+                            @item.Descrpition
+                        </td>
+                        <td>
+                            @item.Category
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+    @Html.ActionLink("Create", "CreateItem", "Item", new { @class = "button" })
+</div>
+    </body>
+
+

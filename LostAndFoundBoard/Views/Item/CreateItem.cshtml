@@ -1,0 +1,63 @@
+﻿
+
+@model LostAndFoundBoard.Application.ViewModel.CreateItemViewModel
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="~/css/Index.css" />
+    </head>
+
+    <body>
+        @using (Html.BeginForm("CreateItem", "Item", FormMethod.Post))
+{
+
+        <table>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.Title)
+                </td>
+                <td>
+                    @Html.TextAreaFor(m => m.Title)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.Description)
+                </td>
+                <td>
+                    @Html.TextAreaFor(m => m.Description)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.ContactPersonFullName)
+                </td>
+                <td>
+                    @Html.TextAreaFor(m => m.ContactPersonFullName)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.ContactPersonPhoneNumber)
+                </td>
+                <td>
+                    @Html.TextAreaFor(m => m.ContactPersonPhoneNumber)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.Category)
+
+                </td>
+                <td>
+                    @Html.DropDownListFor(m => m.Category, Html.GetEnumSelectList(Model.Category.GetType()),
+                "--Please Select a Category--"))
+                </td>
+            </tr>
+        </table>
+        @Html.ActionLink("Back to index", "Index", "Home")
+
+        <input type="submit" value="Create Item" />
+}
+    </body>
+

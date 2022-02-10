@@ -1,0 +1,71 @@
+﻿@model LostAndFoundBoard.Application.ViewModel.EditItemViewModel
+
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="~/css/Index.css" />
+    </head>
+
+    <body>
+        @using (Html.BeginForm("EditItem", "Item", FormMethod.Post))
+        {
+            <table>
+                <tr>
+                    <td>
+                        @Html.DisplayNameFor(m => m.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => m.Title)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        @Html.DisplayNameFor(m => m.Description)
+                    </td>
+                    <td>
+                        @Html.TextAreaFor(m => m.Description)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayNameFor(m => m.ContactPersonFullName)
+                    </td>
+                    <td>
+                        @Html.TextAreaFor(m => m.ContactPersonFullName)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayNameFor(m => m.ContactPersonPhoneNumber)
+                    </td>
+                    <td>
+                        @Html.TextAreaFor(m => m.ContactPersonPhoneNumber)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayNameFor(m => m.Category)
+
+                    </td>
+                    <td>
+                        @Html.DropDownListFor(m => m.Category, Html.GetEnumSelectList(Model.Category.GetType()),
+                    "--Please Select a Category--"))
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        @Html.DisplayNameFor(m => m.IstemFound)
+                    </td>
+                    <td>
+                        @Html.CheckBoxFor(m => m.IstemFound)
+                    </td>
+                </tr>
+            </table>
+            @Html.ActionLink("Back to index", "Index", "Home")
+
+            @Html.ActionLink("Back to detail", "Detail", "Item", new { Id = Model.Id })
+
+            <input type="submit" value="Update Item" />
+        }
+    </body>
